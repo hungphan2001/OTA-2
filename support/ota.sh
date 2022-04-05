@@ -1,5 +1,5 @@
 DEVICE=$1
-ROMDIR=~/$2
+ROMDIR=~/output/Cherish
 MAINTAINER=$3
 MAINTAINER_URL=$4
 FORUM_URL=$5
@@ -17,7 +17,7 @@ ID=$(md5sum out/target/product/$DEVICE/Cherish*.zip | cut -d " " -f 1)
 FILEHASH=$ID
 SIZE=$(wc -c out/target/product/$DEVICE/Cherish*.zip | awk '{print $1}')
 URL="https://sourceforge.net/projects/cherish-os/files/device/$DEVICE/$FILENAME/download"
-VERSION="11"
+VERSION="12"
 DONATE_URL="https://www.paypal.me/hungphan2001"
 WEBSITE_URL="https://cherishos.com"
 NEWS_URL="https:\/\/t.me\/CherishOS"
